@@ -8,14 +8,14 @@ before_install:
 install:
   - npm install --loglevel=error --depth=0
 env:
-  - CXX=g++-9.4.0
+  - CXX=g++9.4.0
 addons:
   mariadb: '10.3'
   apt:
     sources:
       - ubuntu-toolchain-r-test
     packages:
-      - g++-9.4.0
+      - g++9.4.0
 branches:
   only:
     - main
