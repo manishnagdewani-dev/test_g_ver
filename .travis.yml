@@ -2,6 +2,8 @@ language: node_js
 node_js:
   - "8"
 before_install:
+  - sudo service mysql start
+  - sleep 5 # Wait for MySQL to start
   - sudo mysql -e 'CREATE DATABASE fonestorm CHARACTER SET utf8 COLLATE utf8_general_ci;'
   - npm cache clean --force
   - npm cache verify
