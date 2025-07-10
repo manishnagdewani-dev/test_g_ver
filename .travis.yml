@@ -13,7 +13,7 @@ env:
 before_script:
   - sudo service mysql status 
 addons:
-  mariadb: '10.3'
+  mariadb: '10.5'
   apt:
     sources:
       - ubuntu-toolchain-r-test
